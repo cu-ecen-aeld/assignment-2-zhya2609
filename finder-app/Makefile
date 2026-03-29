@@ -4,10 +4,10 @@ TARGET = writer
 SRC = writer.c
 
 all: 
-        $(CROSS_COMPILE)$(CC) $(SRC) -o $(TARGET)
+	$(CROSS_COMPILE)$(CC) $(SRC) -o $(TARGET)
 #       gcc $(SRC) -o $(TARGET)
 
 clean:
-        rm -f $(TARGET).o $(TARGET)
+	rm -f $(TARGET).o $(TARGET)
 
 .PHONY: all clean
